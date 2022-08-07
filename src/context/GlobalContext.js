@@ -6,6 +6,16 @@ const GlobalContext = React.createContext({
     smallCalendarMonth: 0,
     setSmallCalendarMonth: (index) => { },
     daySelected: null,
-    setDaySelected: (day) => { }
+    setDaySelected: (day) => { },
+    showEventModal: false,
+    setShowEventModal: () => { },
+    dispatchCalEvent: (type, payload) => { },
+    savedEvents: [],
+    selectedEvent: null,
+    setSelectedEvent: () => { },
+    labels: [],
+    setLabels: () => { },
+    updateLabel: () => { },
+    filteredEvents: []
 })
 export default GlobalContext;
